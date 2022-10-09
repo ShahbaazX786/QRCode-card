@@ -13,13 +13,18 @@
     box-sizing: border-box;
 }
 
-main{
+body{
     background-color: var(--Light-gray);
+}
+
+main{
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* overflow:-moz-hidden-unscrollable; */
 }
 
 article{
@@ -30,6 +35,12 @@ article{
     width: 300px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 50px;
+    transition: all 0.4s ease-out;
+}
+
+article:hover{
+    transform:scale(1.08);
+    transition: all 0.3s ease-in;
 }
 
 .card-main-container{
@@ -61,4 +72,10 @@ article{
     margin: 0 9px;
     padding: 0 5px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:600px) {
+    article{
+        transform: scale(1.18);
+    }
 }
