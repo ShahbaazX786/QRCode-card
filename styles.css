@@ -64,6 +64,7 @@ article:hover{
     margin: 0 5px;
     padding: 0 5px;
     word-wrap: break-word;
+    color: var(--Dark-blue);
 }
 
 .desc{
